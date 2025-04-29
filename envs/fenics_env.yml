@@ -1,0 +1,26 @@
+channels:
+ - conda-forge
+dependencies:
+ - fenics>=2019.1
+ - pyvista
+ - tqdm
+ - meshio 
+ - numpy
+ - matplotlib
+ - pip
+ - pyyaml
+ - k3d
+ - openmpi
+ - petsc>=3.23
+ - libopenblas=*=*openmp*
+ - vtk=*=*mesa*
+ - mumps-mpi>=5.7.3
+ - seaborn
+ - flask
+ - playwright
+ - imageio
+ - cmap
+ - pip:
+    - numpy_indexed
+    - cmocean
+    - dufte

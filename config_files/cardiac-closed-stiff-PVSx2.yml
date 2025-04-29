@@ -1,0 +1,50 @@
+num_threads : 4
+log_level : 16
+T : 0.3
+f : 10
+num_steps : 90
+BLR : True
+BLR_eps : 1e-10
+vessel_pulsation : 5.0e-8
+inflow_amplitude : 0.0
+periodic : True
+num_strings : 0
+type: biotbiot
+material_parameters:
+  intracellular:
+    E : 1500 # Young modulus
+    nu : 0.3 # Poisson ratio 
+    rho_s : 1000
+    alpha : 1.0
+    c :   0
+    rho_f : 1000
+    mu_f : 0.0007
+    kappa : 1.0e-15
+    #kappa : 4.16e-17 # Hela, from Moeendarbary, Emad, et al. "The cytoplasm of living cells behaves as a poroelastic material." Nature materials 12.3 (2013): 253-261.
+    #D_p: 40.0e-12
+  extracellular:
+    E : 150 # Young modulus
+    nu : 0.3 # Poisson ratio 
+    rho_s : 1000
+    alpha : 1.0
+    c :   0
+    rho_f : 1000
+    mu_f : 0.0007
+    kappa : 2.0e-15
+  pvs:
+    E : 300 # Young modulus
+    nu : 0.3 # Poisson ratio 
+    rho_s : 1000
+    alpha : 1.0
+    c :   0
+    rho_f : 1000
+    mu_f : 0.0007
+    kappa : 2.0e-14
+  boundary:
+    p_far_field : 0
+    dist_far_field : 50.0e-6
+    kappa : 1.0e-16 # Holter
+    E : 1500
+  membrane:
+    P_f_aqp: 0.0005
+    P_f_wo_aqp : 0.00007

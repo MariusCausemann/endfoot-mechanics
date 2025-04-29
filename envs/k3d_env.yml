@@ -1,0 +1,27 @@
+name:
+  k3d
+channels:
+  - conda-forge
+  - microsoft
+
+dependencies:
+ - k3d
+ - pandas 
+ - pyvista
+ - meshio
+ - numpy
+ - matplotlib
+ - flask
+ - ipython
+ - pip
+ - pythreejs
+ - pyyaml
+ - imageio[pil]
+ - playwright
+ - pytest-playwright
+ - cmap
+ - ffmpeg
+ - pip:
+    - numpy_indexed
+
+    
